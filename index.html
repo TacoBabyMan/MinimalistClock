@@ -1,0 +1,13 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Clock</title>
+</head>
+<body style="background-color: rgb(18, 18, 18); display: flex; justify-content: center; align-items: center;">
+    <p style="font-size: 9rem;color: rgb(207, 207, 207);"></p>
+</body>
+<script>
+    const timer = setInterval(()=>{document.querySelector('body > p').innerHTML = `${new Date().getHours().toString().padStart(2, '0')}:${new Date().getMinutes().toString().padStart(2, '0')}:${new Date().getSeconds().toString().padStart(2, '0')}`},1000)
+</script>
+</html>
